@@ -1,0 +1,109 @@
+.stp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stp .header{
+    padding-top: 2em;
+    line-height: 2.5em;
+
+}
+.header .title{
+    color: hsl(213, 96%, 18%);
+}
+.header.exp{
+    color: hsl(231, 11%, 63%);
+}
+#stepFour{
+    display: flex;
+    width: 90%;
+    padding: 0 4em;
+}
+#stepFour > div{
+    position: relative;
+
+}
+
+.selectionBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.selectionContainer{
+    background-color: hsl(217, 100%, 97%);
+    padding: 1.4rem;
+
+}
+.selected{
+    border: 2px solid hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
+
+}
+.selectedPlan{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+
+}
+.selectedAddon{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+    font-size: 1em;
+}
+.selectedAddon .servicePrice{
+    color: hsl(213, 96%, 18%);
+}
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem;
+    color: hsl(231, 11%, 63%);
+    
+}
+.total b{
+    color: hsl(243, 100%, 62%);
+    font-size: 1.2em;
+}
+
+
+.btns{
+    /* background-color: red; */
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+.prevBtn{
+    
+    /* margin-top: 4em;
+    margin-bottom: 2em; */
+    margin:0;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+.nextBtn{
+    /* position: absolute; */
+    /* margin-top: 4em;
+    margin-bottom: 2em; */
+    margin:0;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+    cursor: pointer;
+}

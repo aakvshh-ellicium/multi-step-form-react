@@ -1,0 +1,78 @@
+.stp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stp .header{
+    padding-top: 2em;
+    line-height: 2.5em;
+
+}
+.header .title{
+    color: hsl(213, 96%, 18%);
+}
+.header.exp{
+    color: hsl(231, 11%, 63%);
+}
+
+#stepOne{
+    display: flex;
+    width: 90%;
+    padding: 0 4em;
+}
+#stepOne form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#stepOne form > div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    gap: 1em;
+    position: relative;
+
+}
+.label{
+    color: hsl(213, 96%, 18%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#stepOne form input{
+    padding: 1em;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 0.45em;
+}
+#stepOne form input:focus{
+    outline-color: hsl(243, 100%, 62%);
+}
+form .error{
+    display: block;
+    color: hsl(354, 84%, 57%);
+    font-size: 1em;
+    font-weight: 700;
+}
+.btns{
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.nextBtn{
+    
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+    cursor: pointer;
+}

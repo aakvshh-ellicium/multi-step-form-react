@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+#selected{
+  border: 2px solid hsl(243, 100%, 62%);
+  background-color: hsl(217, 100%, 97%);
+
+}
+.selected{
+  border: 2px solid hsl(243, 100%, 62%);
+  background-color: hsl(217, 100%, 97%);
+
+}
+.circle{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+}
+.step{
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+.active .circle{
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+
+}

@@ -1,0 +1,48 @@
+.sidebar{
+    width: 400px;
+    height: 568px;
+    background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+#active .circle{
+    background-color: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+
+}
+.step{
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+.stepText{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.stepText span{
+    text-transform: uppercase;
+    color: hsl(229, 24%, 87%);
+    font-size: 13px;
+
+}
+#white{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}

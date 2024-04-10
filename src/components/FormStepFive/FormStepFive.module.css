@@ -1,0 +1,32 @@
+.stp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.stp .header{
+    padding-top: 2em;
+    line-height: 2.5em;
+
+}
+.header .title{
+    color: hsl(213, 96%, 18%);
+}
+.header.exp{
+    color: hsl(231, 11%, 63%);
+}
+#stepFive{
+    display: flex;
+    width: 90%;
+    padding: 0 4em;
+}
+.nextBtn{
+    margin:0;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+    cursor: pointer;
+}

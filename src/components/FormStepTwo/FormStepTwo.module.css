@@ -1,0 +1,170 @@
+.stp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stp .header{
+    padding-top: 2em;
+    line-height: 2.5em;
+
+}
+.header .title{
+    color: hsl(213, 96%, 18%);
+}
+.header.exp{
+    color: hsl(231, 11%, 63%);
+}
+#stepTwo{
+    display: flex;
+    width: 90%;
+    padding: 0 4em;
+
+}
+#stepTwo form > div{
+    display: flex;
+    gap: 1em;
+}
+#stepTwo form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    gap: 2em;
+    /* justify-content: space-between; */
+    position: relative;
+
+}
+.planCard{
+    width: 150px;
+    min-height: 170px;
+    border: 2px solid hsl(229, 24%, 87%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em;
+    cursor: pointer;
+}
+.planInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+.planInfo b{
+    color: hsl(213, 96%, 18%);
+}
+.planInfo span{
+    color: hsl(231, 11%, 63%);
+
+}
+
+#selected{
+    border: 2px solid hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
+
+}
+
+
+
+.btns{
+    /* background-color: red; */
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+.prevBtn{
+    
+    /* margin-top: 4em;
+    margin-bottom: 2em; */
+    margin:0;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+.nextBtn{
+    /* position: absolute; */
+    /* margin-top: 4em;
+    margin-bottom: 2em; */
+    margin:0;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.monthly, .yearly{
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+}
+#active{
+    color: hsl(213, 96%, 18%);
+
+}
+.switcher{
+    background-color: hsl(217, 100%, 97%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 5em;
+    width: 100%;
+    border-radius: 7px;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsl(213, 96%, 18%);
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    top: 0.63vh;
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider::before{
+    transform: translateX(26px);
+}
+
+.slider #round{
+    border-radius: 34px;
+}
+.slider #round::before{
+    border-radius: 50%;
+}
+
+
