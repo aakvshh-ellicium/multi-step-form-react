@@ -32,9 +32,11 @@ body{
   display: flex;
   align-items: center;
   gap: 0.8em;
+  cursor: pointer;
 }
 .active .circle{
   background-color: hsl(206, 94%, 87%);
   color: hsl(213, 96%, 18%);
 
 }
+

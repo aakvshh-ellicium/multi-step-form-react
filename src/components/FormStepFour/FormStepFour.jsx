@@ -48,7 +48,10 @@ const FormStepFour = () => {
       <div className={styles.selectionBox}>
         <div className={styles.selectionContainer}>
           <div className={styles.selectedPlan}>
-            <p className={styles.planName}>{userData.selectedPlan} {userData.isMonthly ? '(Monthly)' : '(Yearly)'}</p>
+            <div>
+              <p className={styles.planName}>{userData.selectedPlan} {userData.isMonthly ? '(Monthly)' : '(Yearly)'}</p>
+              <span onClick={() => navigate('/select-plan')} style={{fontSize: '13px', color: 'hsl(243, 100%, 62%)', textDecoration: 'underline', cursor: 'pointer'}}>Change</span>
+            </div>
             <p className={styles.planPrice}>{userData.selectedPlanPrice}</p>
           </div>
           <hr />
